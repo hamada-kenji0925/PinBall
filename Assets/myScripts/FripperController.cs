@@ -45,7 +45,7 @@ public class FripperController : MonoBehaviour {
 			SetAngel (this.defaultAngel);
 		}
 
-		//タップ判定処理
+		//（発展課題）タップ判定処理
 		foreach (Touch touch in Input.touches) {
 			//タップされた位置と境界線との比較
 			if (touch.position.x < this.winBorder) {
