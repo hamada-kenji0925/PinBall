@@ -54,7 +54,7 @@ public class FripperController : MonoBehaviour {
 					SetAngel (this.flickAngel);
 				}
 				//
-				if (touch.phase == TouchPhase.Ended && tag == "LeftFripperTag" || tag == "RightFripperTag") {
+				if (touch.phase == TouchPhase.Ended && (tag == "LeftFripperTag" || tag == "RightFripperTag")) {
 					SetAngel (this.defaultAngel);
 				}
 					
@@ -63,7 +63,7 @@ public class FripperController : MonoBehaviour {
 				if (touch.phase == TouchPhase.Began && tag == "RightFripperTag") {
 					SetAngel (this.flickAngel);
 				}
-				if (touch.phase == TouchPhase.Ended && tag == "RightFripperTag" || tag == "LeftFripperTag") {
+				if (touch.phase == TouchPhase.Ended && (tag == "RightFripperTag" || tag == "LeftFripperTag")) {
 					SetAngel (this.defaultAngel);
 				}
 			}	
